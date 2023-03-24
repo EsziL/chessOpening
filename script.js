@@ -6,7 +6,7 @@ openings.forEach((i) => {
 	i.innerHTML = `${i.innerHTML}<h2>${i.dataset.desc}</h2>`
 
 	i.addEventListener("click", () =>{
-		window.location.href = `${baseUrl}/openings/${i.dataset.name}.html`;
+		window.location.href = `${baseUrl}${baseUrl.includes("github") ? "/chessOpening" : ""}/openings/${i.dataset.name}.html`;
 	});
 
 });
