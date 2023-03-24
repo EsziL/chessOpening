@@ -1,0 +1,162 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background-color: #001524;
+	overflow-x: hidden;
+}
+
+.navbar {
+	background-color: #22577A;
+	overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: "Montserrat";
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+	background-color: #dcf8df;
+	color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+	background-color: #04AA6D;
+	color: white;
+}
+
+.opening {
+	background-color: #38A3A5;
+	height: 18vh;
+	width: 14vw;
+	border-radius: 8px;
+	text-align: center;
+	outline: 2px solid white;
+	transition: transform 0.2s;
+	cursor: pointer;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	font-family: 'Ubuntu';
+	color: #C7F9CC;
+	font-size: 3vw;
+}
+
+.up-center {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.opening-div {
+	display: flex;
+	flex-direction: row;
+	column-gap: 1vw;
+}
+
+.opening h1 {
+	color: #C7F9CC;
+	font-family: 'Alkatra';
+	font-size: 1.75vw;
+}
+.opening h2 {
+	color: white;
+	font-style: italic;
+	font-family: 'Ubuntu';
+	font-size: 1.2vw;
+}
+
+.opening:hover {
+	transform: scale(1.035);
+}
+
+
+.board {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.desc {
+	font-family: 'Montserrat';
+	color: #C7F9CC;
+	font-size: 1vw;
+	margin: 0;
+	overflow: hidden;
+	padding-bottom: 5px;
+	word-wrap: break-word;
+}
+
+.sub {
+	margin: 0;
+	position: relative;
+	left: 40px;
+}
+
+.section {
+	font-family: 'Montserrat';
+	color: #C7F9CC;
+	font-weight: bold;
+	font-size: 1.5vw;
+	margin: 0;
+	overflow: hidden;
+	padding-bottom: 5px;
+}
+
+.left {
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 0;
+}
+
+.move {
+	color: #80ED99;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.space {
+	padding-bottom: 10vh;
+}
+
+::-webkit-scrollbar {
+	background: none;
+	width: 16px;
+	height: 16px;
+	cursor: default;
+  }
+::-webkit-scrollbar-corner {
+	background: transparent;
+  }
+::-webkit-scrollbar-thumb {
+	border-width: 0px 4px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0);
+	border-image: initial;
+	border-radius: 9px / 4px;
+	box-shadow: #0f031d 0px 0px 0px 1px inset, #38A3A5 0px 0px 0px 4px inset;
+	cursor: pointer;
+	user-select: none;
+  }
+::-webkit-scrollbar-track-piece {
+	margin: 4px 0px;
+  }
