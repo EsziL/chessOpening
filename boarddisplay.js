@@ -94,7 +94,7 @@ moves.forEach((m) => {
 			if (!isMobileDevice()) {
 				m.innerHTML = `${m.innerHTML}<div class="board" data-pos="${m.dataset.pos}" data-border="10px" data-size="25vh" style="position:absolute;top:calc(${m.offsetTop}px - 27vh);left:${m.offsetLeft}px"></div>`;
 			} else {
-				m.innerHTML = `${m.innerHTML}<div class="board" data-pos="${m.dataset.pos}" data-border="10px" data-size="25vh" style="position:absolute;top:calc(${m.offsetTop}px - 27vh + 100px);left:${m.offsetLeft}px"></div>`;
+				m.innerHTML = `${m.innerHTML}<div class="board" data-pos="${m.dataset.pos}" data-border="10px" data-size="25vh" style="position:absolute;top:calc(${m.offsetTop}px - 27vh + 70px);left:${m.offsetLeft}px"></div>`;
 
 			}
 			m.classList.add("hasBoard");
