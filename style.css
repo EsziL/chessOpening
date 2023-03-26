@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-	background-color: #001524;
+	background-color: #0e1317;
 	overflow-x: hidden;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .opening {
-	background-color: #38A3A5;
+	background-color: #386c6e;
 	height: 22vh;
 	width: 14vw;
 	border-radius: 8px;
@@ -89,7 +89,7 @@ body {
 }
 
 .opening h1 {
-	color: #C7F9CC;
+	color: #d0ffc4;
 	font-family: 'Alkatra';
 	font-size: 1.75vw;
 }
