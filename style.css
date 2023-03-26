@@ -1,5 +1,6 @@
 html, body {
 	height: 100%;
+	width: 100%;
 	margin: 0;
 }
 
@@ -11,6 +12,7 @@ body {
 .navbar {
 	background-color: #22577A;
 	overflow: hidden;
+	width: 100%;
 }
 
 /* Style the links inside the navigation bar */
@@ -138,25 +140,79 @@ body {
 	padding-bottom: 10vh;
 }
 
-::-webkit-scrollbar {
-	background: none;
-	width: 16px;
-	height: 16px;
-	cursor: default;
-  }
-::-webkit-scrollbar-corner {
-	background: transparent;
-  }
-::-webkit-scrollbar-thumb {
-	border-width: 0px 4px;
-	border-style: solid;
-	border-color: rgba(0, 0, 0, 0);
-	border-image: initial;
-	border-radius: 9px / 4px;
-	box-shadow: #0f031d 0px 0px 0px 1px inset, #38A3A5 0px 0px 0px 4px inset;
-	cursor: pointer;
-	user-select: none;
-  }
-::-webkit-scrollbar-track-piece {
-	margin: 4px 0px;
-  }
+/* Styles for only pc */
+@media (min-width: 768px) {
+	::-webkit-scrollbar {
+		background: none;
+		width: 16px;
+		height: 16px;
+		cursor: default;
+	  }
+	::-webkit-scrollbar-corner {
+		background: transparent;
+	  }
+	::-webkit-scrollbar-thumb {
+		border-width: 0px 4px;
+		border-style: solid;
+		border-color: rgba(0, 0, 0, 0);
+		border-image: initial;
+		border-radius: 9px / 4px;
+		box-shadow: #0f031d 0px 0px 0px 1px inset, #38A3A5 0px 0px 0px 4px inset;
+		cursor: pointer;
+		user-select: none;
+	  }
+	::-webkit-scrollbar-track-piece {
+		margin: 4px 0px;
+	  }
+}
+
+
+
+/* Styles for mobile */
+@media (max-width: 767px) {
+
+
+
+	.sub {
+		margin: 0;
+		position: relative;
+		left: 10px;
+	}
+
+	.desc {
+		font-size: 2.5vw;
+	}
+	
+	.section {
+		font-size: 4vw;
+	}
+	
+	.navbar a {
+		float: left;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 5px 12px;
+		text-decoration: none;
+		font-size: 17px;
+		font-family: "Montserrat";
+	}
+	
+	/* Change the color of links on hover */
+	.navbar a:hover {
+		background-color: #dcf8df;
+		color: black;
+	}
+	
+	/* Add a color to the active/current link */
+	.navbar a.active {
+		background-color: #04AA6D;
+		color: white;
+	}
+
+	.title {
+		font-family: 'Ubuntu';
+		color: #C7F9CC;
+		font-size: 6vw;
+	}
+
+}

@@ -12,11 +12,21 @@ function boardSetup() {
 	
 			
 			if (board.dataset.border != undefined) {
-				board.style.border = `${board.dataset.border} solid white`;
+				if (!isMobileDevice()) {
+					board.style.border = `${board.dataset.border} solid white`;
+				} else {
+					board.style.border = `calc(${board.dataset.border} / 3) solid white`;
+
+				}
 			}
 			
-			board.style.height = board.dataset.size;
-			board.style.width = board.dataset.size;
+			if (!isMobileDevice()) {
+				board.style.height = board.dataset.size;
+				board.style.width = board.dataset.size;
+			} else {
+				board.style.height = `calc(${board.dataset.size} / 2)`;
+				board.style.width = `calc(${board.dataset.size} / 2)`;
+			}
 			
 			var position = board.getAttribute('data-pos');
 			var rows = position.split('/');
@@ -81,7 +91,12 @@ const moves = document.querySelectorAll(".move");
 moves.forEach((m) => {
 	m.addEventListener("mouseenter", () => {
 		if (!m.classList.contains("hasBoard")) {
-			m.innerHTML = `${m.innerHTML}<div class="board" data-pos="${m.dataset.pos}" data-border="10px" data-size="25vh" style="position:absolute;top:calc(${m.offsetTop}px - 27vh);left:${m.offsetLeft}px"></div>`;
+			if (!isMobileDevice()) {
+				m.innerHTML = `${m.innerHTML}<div class="board" data-pos="${m.dataset.pos}" data-border="10px" data-size="25vh" style="position:absolute;top:calc(${m.offsetTop}px - 27vh);left:${m.offsetLeft}px"></div>`;
+			} else {
+				m.innerHTML = `${m.innerHTML}<div class="board" data-pos="${m.dataset.pos}" data-border="10px" data-size="25vh" style="position:absolute;top:calc(${m.offsetTop}px - 27vh);left:${m.offsetLeft}px"></div>`;
+
+			}
 			m.classList.add("hasBoard");
 			boardSetup();
 		}
@@ -115,3 +130,13 @@ descs.forEach((d) => {
 	d.style.width = `${document.documentElement.clientWidth-rect.left}px`;
 
 });
+
+
+
+function isMobile() {
+	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+function isMobileDevice() {
+	return window.innerWidth < 768; // Assuming a width of less than 768 pixels means it's a mobile device
+}
