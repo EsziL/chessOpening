@@ -49,6 +49,15 @@ body {
 	cursor: pointer;
 }
 
+.full-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 85%;
+}
+
 .center {
 	display: flex;
 	flex-direction: column;
