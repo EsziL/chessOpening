@@ -40,7 +40,7 @@ body {
 
 .opening {
 	background-color: #38A3A5;
-	height: 18vh;
+	height: 22vh;
 	width: 14vw;
 	border-radius: 8px;
 	text-align: center;
@@ -69,8 +69,14 @@ body {
 }
 .opening-div {
 	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.opening-div-div {
+	display: flex;
 	flex-direction: row;
-	column-gap: 1vw;
+	width: 95%;
 }
 
 .opening h1 {
@@ -213,6 +219,28 @@ body {
 		font-family: 'Ubuntu';
 		color: #C7F9CC;
 		font-size: 6vw;
+	}
+
+	.opening {
+		background-color: #38A3A5;
+		height: 18vh;
+		width: 24vw;
+		border-radius: 8px;
+		text-align: center;
+		outline: 2px solid white;
+		transition: transform 0.2s;
+		cursor: pointer;
+	}
+	.opening h1 {
+		color: #C7F9CC;
+		font-family: 'Alkatra';
+		font-size: 4vw;
+	}
+	.opening h2 {
+		color: white;
+		font-style: italic;
+		font-family: 'Ubuntu';
+		font-size: 3.5vw;
 	}
 
 }
