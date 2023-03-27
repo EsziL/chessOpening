@@ -24,8 +24,8 @@ function boardSetup() {
 				board.style.height = board.dataset.size;
 				board.style.width = board.dataset.size;
 			} else {
-				board.style.height = `calc(${board.dataset.size} / 1.5)`;
-				board.style.width = `calc(${board.dataset.size} / 1.5)`;
+				board.style.height = `calc(${board.dataset.size} / 1.2)`;
+				board.style.width = `calc(${board.dataset.size} / 1.2)`;
 			}
 			
 			var position = board.getAttribute('data-pos');
