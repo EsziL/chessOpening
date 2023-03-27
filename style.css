@@ -251,5 +251,8 @@ body {
 		font-family: 'Ubuntu';
 		font-size: 3.5vw;
 	}
+        .space {
+                padding-bottom: 50vh;
+        }
 
 }
