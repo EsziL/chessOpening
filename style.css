@@ -171,7 +171,7 @@ body {
 }
 
 .space {
-	padding-bottom: 10vh;
+	padding-bottom: 40vh;
 }
 
 /* Styles for only pc */
@@ -249,24 +249,14 @@ body {
 	}
 
 	.opening {
-		background-color: #38A3A5;
 		height: 18vh;
 		width: 24vw;
 		border-radius: 8px;
-		text-align: center;
-		outline: 2px solid white;
-		transition: transform 0.2s;
-		cursor: pointer;
 	}
 	.opening h1 {
-		color: #C7F9CC;
-		font-family: 'Alkatra';
 		font-size: 4vw;
 	}
 	.opening h2 {
-		color: white;
-		font-style: italic;
-		font-family: 'Ubuntu';
 		font-size: 3.5vw;
 	}
 	
@@ -274,7 +264,7 @@ body {
 		float: left;
 		color: #f2f2f2;
 		text-align: center;
-		padding: 6px 16px;
+		padding: 10px 16px;
 		text-decoration: none;
 		font-size: 14.5px;
 		font-family: "Montserrat";
